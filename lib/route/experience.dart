@@ -85,7 +85,7 @@ class Experience extends StatelessWidget {
                   child: Column(
                     children: [
                       const Center(
-                        child: Text("Work Experience", style: headingStyle),
+                        child: Text("WORK EXPERIENCE", style: headingStyle),
                       ),
                       const SizedBox(height: 32),
 
@@ -108,7 +108,7 @@ class Experience extends StatelessWidget {
 
                       const SizedBox(height: 48),
                       const Center(
-                        child: Text("Tech Stack", style: headingStyle),
+                        child: Text("TECH STACK", style: headingStyle),
                       ),
                       const SizedBox(height: 24),
                       glassyContainer(
@@ -301,6 +301,16 @@ class Experience extends StatelessWidget {
 //Experience Data
 final List<ExperienceModel> experienceData = [
   ExperienceModel(
+    companyName: 'ActualWise Consulting LLC',
+    timePeriod: 'Oct 2025 - Present',
+    position: 'Software Engineer',
+    location: 'Chicago, USA',
+    descriptions: [
+      'Engineered backend data-processing services in Python to ingest, validate, and normalize employee and actuarial datasets for OPEB and pension valuation pipelines, improving data reliability and consistency across downstream computations.',
+      'Abstracted actuarial business rules into reusable components, reduced manual data handling by ~40% and streamlined valuation workflows.',
+    ],
+  ),
+  ExperienceModel(
     companyName: 'Kaplan Institute - Illinois Institute of Technology',
     timePeriod: 'Sep 2023 - May 2025',
     position: 'Operations & Data Analyst',
@@ -314,49 +324,55 @@ final List<ExperienceModel> experienceData = [
   ExperienceModel(
     companyName: 'Syndigo LLC',
     timePeriod: 'Jun 2024 - Nov 2024',
-    position: 'Software Intern',
+    position: 'Software Engineering Intern',
     location: 'Chicago, USA',
     descriptions: [
-      'Developed a low-code automation framework enabling citizen testers to independently create and execute test cases, increasing automation coverage by 20%.',
-      'Orchestrated a continuous testing pipeline with 80% API coverage by automating 25+ APIs and 100+ scenarios using Python and Playwright, ensuring data consistency and business alignment.',
-      'Created a validation module automating checks for 25+ APIs in Azure storage, ensuring 100% data transformation accuracy across multiple products.',
-      'Operationalized end-to-end (E2E) automation, achieving 40% UI test coverage post data model synchronization, enhancing overall testing efficiency and system accuracy.',
+      'Designed a low-code automation platform using Playwright to orchestrate UI and API workflows, reducing duplicate scripting by ~50% and accelerating cross-team onboarding.',
+      'Built scalable execution services supporting 25+ API integrations and 100+ automated workflows across browsers, enabling parallel execution and reliable multi-environment coverage.',
+      'Developed data transformation and validation pipelines on AWS to verify distributed product datasets, detecting inconsistencies early and ensuring 100% end-to-end data integrity before downstream processing.',
     ],
   ),
   ExperienceModel(
     companyName: 'Cognizant Technology Solutions',
     timePeriod: 'Aug 2020 - Jul 2023',
-    position: 'Associate',
+    position: 'Software Engineer',
     location: 'Bangalore, India',
     descriptions: [
-      'Designed and Engineered an extensible Automated Reporting System using Python and HTML/CSS for senior leadership, cutting manual effort and reporting time by 95%.',
-      'Developed a reusable Test Automation Framework with Python and Robot Framework, improving testing efficiency and slashing regression effort from 70 to 3 man-days.',
-      'Implemented automation for 200+ regression test cases and added new scenarios each sprint, increasing coverage by 40% and maintaining test quality.',
-      'Spearheaded adoption of automation frameworks across client projects, boosting offshore collaboration and enabling effective resource management by the senior leadership team, ultimately improving project delivery.',
-      'Orchestrated sprint-wise functional demos, expediting production deployments by 1 week each and improving stakeholder alignment and trust.',
+      'Architected a Python + Selenium based automation framework with modular execution, reducing regression runtime from ~70 to under 3 engineer-days per release.',
+      'Developed full-stack execution dashboards using Java, React, and Bootstrap, enabling drill-down analysis of test failures and execution trends, reducing mean time to identify and triage failures by ~40%.',
+      'Built a Java REST service integrating Jira APIs to generate real-time sprint and defect analytics, eliminating 95% of manual reporting.',
+      'Integrated automation and reporting services into CI/CD pipelines, enabling continuous quality feedback within Agile (Scrum) sprint cycles.',
+      'Partnered with product owners during UAT cycles to translate stakeholder feedback into prioritized backlog items, accelerating feature acceptance and release confidence.',
     ],
   ),
 ];
 
 //Tech Stack
-final List<String> languages = ['Dart', 'Python', 'JavaScript', 'Java', 'SQL'];
+final List<String> languages = [
+  'Python',
+  'Java',
+  'SQL',
+  'JavaScript',
+  'HTML',
+  'CSS',
+  'Dart',
+];
 final List<String> frameworks = [
   'Flutter',
-  'Flet',
-  'Kivy',
-  'Angular',
+  'Spring Framework',
+  'React',
   'Selenium',
   'Robot Framework',
   'Playwright',
   'Bootstrap',
 ];
 final List<String> tools = [
-  'Git',
+  'Google Cloud Platfrom',
+  'AWS(S3, Athena, Quicksight)',
+  'Docker',
   'Jira',
-  'AWS',
+  'Git',
   'Postman',
-  'IBM Watson',
+  'Oracle Cloud (OCI, VBCS)',
   'MS Office',
-  'AirTable',
-  'Notion',
 ];

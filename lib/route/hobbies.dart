@@ -125,7 +125,7 @@ class _HobbiesState extends State<Hobbies> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Center(
-                          child: Text("Hobbies", style: titleTextStyle),
+                          child: Text("HOBBIES", style: titleTextStyle),
                         ),
                         const SizedBox(height: 32),
 

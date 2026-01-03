@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                               children: [
                                 const Center(
                                   child: Text(
-                                    "About Me",
+                                    "ABOUT ME",
                                     style: TextStyle(
                                       fontSize: 24,
                                       fontWeight: FontWeight.bold,

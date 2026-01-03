@@ -29,7 +29,7 @@ class Projects extends StatelessWidget {
                     children: [
                       const Center(
                         child: Text(
-                          "Projects",
+                          "PROJECTS",
                           style: TextStyle(
                             fontFamily: 'RobotoMono',
                             fontSize: 28,
@@ -183,23 +183,32 @@ class Projects extends StatelessWidget {
 //project list
 final List<Project> projects = [
   Project(
-    title: "AutoApplyLn",
+    title: "Split-A-Bill",
     descriptions: [
-      "1. Automated the job application process, achieving an 80% increase in efficiency, by developing a tool that enabled users to filter LinkedIn job postings.",
-      "2. Enhanced user experience and improved networking efficiency by creating an intuitive frontend interface, and by generating an Excel report that logs all application details and collects HR contacts, helping users build a valuable professional network.",
+      '1. Built an AI-powered receipt ingestion pipeline using Google Cloud Vision OCR, extracting structured pricing and tax data from unstructured bills, reducing manual entry by ~90%.',
+      '2. Implemented RESTful microservices with Java and Spring Boot for bill management and user workflows, enabling scalable CRUD operations for concurrent users.',
+      '3. Formulated proportional split and tip-calculation algorithms with modular business logic to enable extensibility and maintainability.',
+      '4. Hosted backend services on Google Cloud Platform (Cloud Run) with monitoring and logging, achieving ~99% service availability and actionable performance insights.',
     ],
-    imagePath: 'images/autoApplyLn.png',
-    url: 'https://github.com/hey-Gana/autoApplyLn',
+    imagePath: 'images/Splitabill.png',
+    url: 'https://hey-gana.github.io/splitable/',
   ),
   Project(
     title: "TacTics - Competitive twists to classical Tic-Tac-Toe",
     descriptions: [
-      "1. Designed and developed a multi-variant Tic-Tac-Toe mobile app in Flutter with efficient game logic and responsive UI.",
-      "2. Integrated AI opponent using adversarial search (Minimax), enabling intelligent single-player gameplay.",
-      "3. Optimized win/loss/draw evaluation with O(1) time and space complexity for high-performance updates.",
-      "4. Built a scalable, reactive architecture supporting rule variation, stacking, and dynamic board interactions.",
+      '1. Implemented an AI opponent using the Minimax adversarial search algorithm, delivering optimal single-player gameplay across multiple game variants.',
+      '2. Developed a cross-platform Flutter application with responsive UI and efficient state management, supporting smooth gameplay on iOS and Android.',
     ],
     imagePath: 'images/TacTics_homepage.png',
     url: 'https://github.com/hey-Gana/TacTics',
+  ),
+  Project(
+    title: "AutoApplyLn",
+    descriptions: [
+      '1. Orchestrated an end-to-end system to discover, filter, and process LinkedIn job postings, automating application workflows and reducing manual application effort by ~80%.',
+      '2. Extracted structured job data with Selenium-based scraping modules, enabling tracking of 100+ applications concurrently and generating actionable reports that improved user outreach visibility by ~70%.',
+    ],
+    imagePath: 'images/autoApplyLn.png',
+    url: 'https://github.com/hey-Gana/autoApplyLn',
   ),
 ];

@@ -10,12 +10,12 @@ class Destination {
 
 // list of destinations
 const List<Destination> destinations = <Destination>[
-  Destination('About Me', Icon(Icons.g_mobiledata_outlined)),
-  Destination('Experience', Icon(Icons.beenhere_outlined)),
-  Destination('Education', Icon(Icons.school_outlined)),
-  Destination('Projects', Icon(Icons.token_outlined)),
-  Destination('Hobbies', Icon(Icons.local_play_outlined)),
-  Destination('Resume', Icon(Icons.file_present_outlined)),
+  Destination('ABOUT ME', Icon(Icons.g_mobiledata_outlined)),
+  Destination('EXPERIENCE', Icon(Icons.beenhere_outlined)),
+  Destination('EDUCATION', Icon(Icons.school_outlined)),
+  Destination('PROJECTS', Icon(Icons.token_outlined)),
+  Destination('HOBBIES', Icon(Icons.local_play_outlined)),
+  Destination('RESUME', Icon(Icons.file_present_outlined)),
 ];
 
 class NavRail extends StatelessWidget {
@@ -25,7 +25,7 @@ class NavRail extends StatelessWidget {
   //open resume
   static Future<void> _launchResumePdf() async {
     final uri = Uri.parse(
-      'https://hey-Gana.github.io/gana_website/assets/resume/Ganapathi_Subramaniam_S_Resume.pdf',
+      'https://hey-Gana.github.io/gana_website/assets/resume/Ganapathi Subramaniam_Resume.pdf',
     );
 
     if (await canLaunchUrl(uri)) {
@@ -119,6 +119,12 @@ class NavRail extends StatelessWidget {
                       mode: LaunchMode.externalApplication,
                     );
                     break;
+                  case 3:
+                    launchUrl(
+                      Uri.parse('https://groovewgana.wordpress.com'),
+                      mode: LaunchMode.externalApplication,
+                    );
+                    break;
                 }
               },
               itemBuilder:
@@ -141,6 +147,13 @@ class NavRail extends StatelessWidget {
                       value: 2,
                       child: Text(
                         'Goodreads',
+                        style: TextStyle(fontFamily: 'RobotoMono'),
+                      ),
+                    ),
+                    PopupMenuItem<int>(
+                      value: 3,
+                      child: Text(
+                        'Blog',
                         style: TextStyle(fontFamily: 'RobotoMono'),
                       ),
                     ),

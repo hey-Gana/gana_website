@@ -53,7 +53,7 @@ class Education extends StatelessWidget {
                   child: Column(
                     children: [
                       const Center(
-                        child: Text("Education", style: headingStyle),
+                        child: Text("EDUCATION", style: headingStyle),
                       ),
                       const SizedBox(height: 32),
 
@@ -61,7 +61,7 @@ class Education extends StatelessWidget {
                       glassyContainer(
                         child: educationSection(
                           imagePath: 'images/iit.png',
-                          title: "Illinois Institute of Technology",
+                          title: "ILLINOIS INSTITUTE OF TECHNOLOGY",
                           degree:
                               "Master's in Applied Science – Computer Science (Specialization: Software Engineering)",
                           coursework:
@@ -81,7 +81,7 @@ class Education extends StatelessWidget {
                       glassyContainer(
                         child: educationSection(
                           imagePath: 'images/sastra.png',
-                          title: "Sastra University",
+                          title: "SASTRA UNIVERSITY",
                           degree:
                               "Bachelors in Technology - Mechanical Engineering",
                           coursework:
